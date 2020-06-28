@@ -1,0 +1,14 @@
+{
+  "name": "codeial",
+  "version": "1.0.0",
+  "description": "User sign up and sign in",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "AnshD",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
