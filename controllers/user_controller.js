@@ -8,6 +8,34 @@ module.exports.user = (req, res) => {
     });
 };
 
+module.exports.profile = (req, res) =>{
+
+    // return res.render('user_profile',{
+    //     title: "User Profile Page"
+    // });
+
+    if(req.cookies.user_id){
+        User.findById(req.cookies.user_id, function(err, user){
+
+            if(user){
+                return res.render('user_profile', {
+                    title: "User Profile",
+                    user: user
+                })
+
+            }else{
+                return res.redirect('/user/sign-in');
+            }
+
+            
+        });
+
+    } else{
+
+    return res.redirect('/user/sign-in');
+    
+    }
+}
 
 module.exports.signUp = (req, res) => {
 
@@ -76,7 +104,7 @@ module.exports.createSession = (req, res) => {
 
             res.cookie('user_id', user.id);
 
-            return res.redirect('/user/welcome');
+            return res.redirect('/user/profile');
 
 
         }else{
