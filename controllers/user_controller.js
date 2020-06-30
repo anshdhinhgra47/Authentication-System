@@ -118,3 +118,19 @@ module.exports.createSession = (req, res) => {
     });
 
 }
+
+
+module.exports.signOut = (req, res) => {
+
+    if(req.cookies.user_id){
+        User.findByIdAndRemove(req.cookies.user_id, function(err){
+            if(err){
+                console.log('error in signing out!');
+                return;
+            }else{
+                return res.redirect('/user/sign-in');
+            }
+            
+        });
+    }
+}
