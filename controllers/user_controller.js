@@ -52,6 +52,13 @@ module.exports.create = function(req, res){
     });
 }
 
+module.exports.profile = (req, res) => {
+    return res.render('user_profile', {
+        title: "User Profile Page"
+    });
+}
+
+
 //Get the Sign In Data and create a session for the user
 module.exports.createSession = (req, res) => {
     return res.redirect('/');
