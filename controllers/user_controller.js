@@ -11,12 +11,20 @@ module.exports.user = (req, res) => {
 
 module.exports.signUp = (req, res) => {
 
+    if(req.isAuthenticated()){
+        return res.redirect('/user/profile');
+    }
+
     return res.render('user_sign_up', {
         title: "Sign Up"
     });
 };
 
 module.exports.signIn = (req, res) => {
+    
+    if(req.isAuthenticated()){
+        return res.redirect('/user/profile');
+    }
 
     return res.render('user_sign_in', {
         title: "Sign In"
