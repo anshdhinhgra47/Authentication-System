@@ -9,6 +9,38 @@ Created an Authentication System
 
 This project supports the MVC structure. You canm learn more about the MVC structure <a href="https://www.youtube.com/watch?v=pCvZtjoRq1I" target="_blank">here</a>
 
+```
+codeial
+├── index.js
+├── package.json
+├── package-lock.json
+├── .gitignore
+├── assets
+|    └── css
+|         └── layouts.css
+|         └── styles.js
+├── models
+|       └── user.js
+├── views
+|      └── _footer.ejs
+|      └── _header.ejs
+|      └── home.ejs
+|      └── layout.ejs
+|      └── user.ejs
+|      └── user_profile.ejs
+|      └── user_sign_in.ejs
+|      └── user_sign_up.ejs
+├── routes
+|      └── index.js
+|      └── user.js
+├── controllers
+|      └── home_controller.js
+|      └── user_controller.js
+├── config
+       └── mongoose.js
+       └── passport-local-strategy.js
+```
+
 
 
 
