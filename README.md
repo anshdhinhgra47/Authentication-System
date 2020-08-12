@@ -41,6 +41,19 @@ codeial
        └── passport-local-strategy.js
 ```
 
+# Starting the project
+
+Make sure you change the directory to codeial
+
+```bash
+cd codeial
+```
+
+Now type in the following command to start the project: 
+
+```bash
+npm start
+```
 
 
 
