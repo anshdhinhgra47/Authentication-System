@@ -9,9 +9,4 @@ Created an Authentication System
 
 This project supports the MVC structure. You canm learn more about the MVC structure <a href="https://www.youtube.com/watch?v=pCvZtjoRq1I" target="_blank">here</a>
 
-```bash
---codeial
-    |
-    |-- index.js
 
-```
