@@ -7,7 +7,7 @@ Created an Authentication System
 
 ## Folder Strucutre
 
-This project supports the MVC structure. You canm learn more about the MVC structure <a href="https://www.youtube.com/watch?v=pCvZtjoRq1I" target="_blank">here</a>
+This project supports the MVC structure. You can learn more about the MVC structure <a href="https://www.youtube.com/watch?v=pCvZtjoRq1I" target="_blank">here</a>
 
 ```
 codeial
@@ -41,18 +41,24 @@ codeial
        └── passport-local-strategy.js
 ```
 
+## Installing the dependencies
+
+```bash
+$ npm install dependencies
+```
+
 ## Starting the project
 
 Make sure you change the directory to codeial
 
 ```bash
-cd codeial
+$ cd codeial
 ```
 
 Now type in the following command to start the project: 
 
 ```bash
-npm start
+$ npm start
 ```
 
 
